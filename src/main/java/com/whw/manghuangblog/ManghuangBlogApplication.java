@@ -10,4 +10,5 @@ public class ManghuangBlogApplication {
         SpringApplication.run(ManghuangBlogApplication.class, args);
     }
 
+
 }
