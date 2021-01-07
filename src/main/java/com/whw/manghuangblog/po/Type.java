@@ -1,6 +1,11 @@
 package com.whw.manghuangblog.po;
 
+import com.sun.istack.NotNull;
+import org.springframework.validation.annotation.Validated;
+
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotEmpty;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,6 +16,8 @@ public class Type {
     @Id
     @GeneratedValue
     private Long id;
+
+    @NotBlank(message = "不能为空")
     private String name;
 
     @OneToMany(mappedBy = "type")
