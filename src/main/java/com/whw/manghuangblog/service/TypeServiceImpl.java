@@ -39,9 +39,6 @@ public class TypeServiceImpl implements TypeService {
     @Override
     public Type updateType(Long id, Type type) {
         Type one = typeReponsitory.getOne(id);
-        if(one == null){
-            throw new NotFoundException("不存在该类型");
-        }
         BeanUtils.copyProperties(type, one);
         return typeReponsitory.save(one);
     }

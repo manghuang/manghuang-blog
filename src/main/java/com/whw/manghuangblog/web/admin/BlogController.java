@@ -12,4 +12,23 @@ public class BlogController {
     public String list(){
         return "admin/blogs";
     }
+
+    @GetMapping("/blogs/input")
+    public String input(){
+        return "admin/blogs-input";
+    }
+
+
+    @GetMapping("/blogs/{id}/input")
+    public String editInput(){
+        return "redirect:/admin/blogs-input";
+    }
+
+    @GetMapping("/blogs/{id}/delete")
+    public String delete(){
+        return "redirect:/admin/blogs";
+    }
+
+
+
 }

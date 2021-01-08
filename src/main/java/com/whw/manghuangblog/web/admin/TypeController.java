@@ -26,7 +26,7 @@ public class TypeController {
     private TypeService typeService;
 
     @GetMapping("types")
-    public String list(@PageableDefault(size = 10, sort = {"id"}, direction = Sort.Direction.DESC)
+    public String list(@PageableDefault(size = 5, sort = {"id"}, direction = Sort.Direction.DESC)
                                    Pageable pageable, Model model){
 
 
