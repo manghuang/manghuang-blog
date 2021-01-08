@@ -20,9 +20,9 @@ public class Blog {
     private Integer views;
     private Boolean appreciation;
     private Boolean shareStatement;
-    private Boolean commentAbled;
+    private Boolean commentabled;
     private Boolean published;
-    private Boolean recommened;
+    private Boolean recommend;
     @Temporal(TemporalType.TIMESTAMP)
     private Date createTime;
     @Temporal(TemporalType.TIMESTAMP)
@@ -40,8 +40,31 @@ public class Blog {
     @OneToMany(mappedBy = "blog")
     private List<Comment> comments = new ArrayList<>();
 
+
+    //不需要放进数据库
+    @Transient
+    private String tagIds;
+
+    private String description;
+
     public Blog(){
 
+    }
+
+    public String getTagIds() {
+        return tagIds;
+    }
+
+    public void setTagIds(String tagIds) {
+        this.tagIds = tagIds;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public List<Comment> getComments() {
@@ -140,13 +163,6 @@ public class Blog {
         this.shareStatement = shareStatement;
     }
 
-    public Boolean getCommentAbled() {
-        return commentAbled;
-    }
-
-    public void setCommentAbled(Boolean commentAbled) {
-        this.commentAbled = commentAbled;
-    }
 
     public Boolean getPublished() {
         return published;
@@ -156,13 +172,6 @@ public class Blog {
         this.published = published;
     }
 
-    public Boolean getRecommened() {
-        return recommened;
-    }
-
-    public void setRecommened(Boolean recommened) {
-        this.recommened = recommened;
-    }
 
     public Date getCreateTime() {
         return createTime;
@@ -180,6 +189,23 @@ public class Blog {
         this.updateTime = updateTime;
     }
 
+
+    public Boolean getRecommend() {
+        return recommend;
+    }
+
+    public void setRecommend(Boolean recommend) {
+        this.recommend = recommend;
+    }
+
+    public Boolean getCommentabled() {
+        return commentabled;
+    }
+
+    public void setCommentabled(Boolean commentabled) {
+        this.commentabled = commentabled;
+    }
+
     @Override
     public String toString() {
         return "Blog{" +
@@ -191,11 +217,17 @@ public class Blog {
                 ", views=" + views +
                 ", appreciation=" + appreciation +
                 ", shareStatement=" + shareStatement +
-                ", commentAbled=" + commentAbled +
+                ", commentabled=" + commentabled +
                 ", published=" + published +
-                ", recommened=" + recommened +
+                ", recommend=" + recommend +
                 ", createTime=" + createTime +
                 ", updateTime=" + updateTime +
+                ", type=" + type +
+                ", tags=" + tags +
+                ", user=" + user +
+                ", comments=" + comments +
+                ", tagIds='" + tagIds + '\'' +
+                ", description='" + description + '\'' +
                 '}';
     }
 }
