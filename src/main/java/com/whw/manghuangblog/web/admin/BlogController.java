@@ -82,18 +82,20 @@ public class BlogController {
             attributes.addFlashAttribute("message", "新增成功");
         }
 
-        return REDIRECT_LIST;
+        return "redirect:/admin/blogs";
     }
 
 
-    @GetMapping("/blogs/{id}/input")
-    public String editInput(){
-        return "redirect:/admin/blogs-input";
-    }
+//    @GetMapping("/blogs/{id}/input")
+//    public String editInput(Blog blog, @PathVariable Long id,  Model model){
+//        model.addAttribute("blog", blogService.getBlog(id));
+//        return "admin/blogs-input";
+//    }
 
     @GetMapping("/blogs/{id}/delete")
-    public String delete(@PathVariable Long id){
+    public String delete(@PathVariable Long id, RedirectAttributes attributes){
         blogService.deleteBlog(id);
+        attributes.addFlashAttribute("message", "删除成功");
         return "redirect:/admin/blogs";
     }
 
