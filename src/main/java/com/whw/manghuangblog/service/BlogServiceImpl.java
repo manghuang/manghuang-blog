@@ -2,11 +2,14 @@ package com.whw.manghuangblog.service;
 
 import com.whw.manghuangblog.dao.BlogReponsitory;
 import com.whw.manghuangblog.po.Blog;
+import com.whw.manghuangblog.util.MyBeanUtils;
 import com.whw.manghuangblog.vo.BlogQuery;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -30,6 +33,12 @@ public class BlogServiceImpl implements BlogService{
         return blogReponsitory.getOne(id);
     }
 
+    /**
+     * 查询blog
+     * @param pageable
+     * @param blog
+     * @return
+     */
     @Override
     public Page<Blog> listBlog(Pageable pageable, BlogQuery blog) {
         return  blogReponsitory.findAll(new Specification<Blog>() {
@@ -52,6 +61,24 @@ public class BlogServiceImpl implements BlogService{
 
     }
 
+    @Override
+    public Page<Blog> listBlog(Pageable pageable) {
+        return blogReponsitory.findAll(pageable);
+    }
+
+    @Override
+    public List<Blog> listRecommendBlogTop(Integer size) {
+        Pageable pageable = PageRequest.of(0, 8, Sort.by(
+                Sort.Direction.DESC, "updateTime"
+        ));
+        return blogReponsitory.findTop(pageable);
+    }
+
+    /**
+     * 新增blog
+     * @param blog
+     * @return
+     */
     @Transactional
     @Override
     public Blog saveBlog(Blog blog) {
@@ -61,13 +88,26 @@ public class BlogServiceImpl implements BlogService{
 
         return blogReponsitory.save(blog);
     }
+
+    /**
+     * 更新blog
+     * @param id
+     * @param blog
+     * @return
+     */
     @Transactional
     @Override
     public Blog updateBlog(Long id, Blog blog) {
         Blog blog1 = blogReponsitory.getOne(id);
-        BeanUtils.copyProperties(blog, blog1);
+        BeanUtils.copyProperties(blog, blog1, MyBeanUtils.getNullPropertyNames(blog));
+        blog1.setUpdateTime(new Date());
         return blogReponsitory.save(blog1);
     }
+
+    /**
+     * 删除blog
+     * @param id
+     */
     @Transactional
     @Override
     public void deleteBlog(Long id) {

@@ -38,6 +38,13 @@ public class BlogController {
     @Autowired
     private TagService tagService;
 
+    /**
+     * nav,进入blog页面
+     * @param pageable
+     * @param blog
+     * @param model
+     * @return
+     */
     @GetMapping("/blogs")
     public String list(@PageableDefault(size = 5, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable,
                        BlogQuery blog,
@@ -48,6 +55,13 @@ public class BlogController {
         return "/admin/blogs";
     }
 
+    /**
+     * blog页面:搜索
+     * @param pageable
+     * @param blog
+     * @param model
+     * @return
+     */
     @PostMapping("/blogs/search")
     public String search(@PageableDefault(size = 5, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable,
                          BlogQuery blog,
@@ -57,6 +71,11 @@ public class BlogController {
     }
 
 
+    /**
+     *blog页面:新增，进入blog-input页面
+     * @param model
+     * @return
+     */
     @GetMapping("/blogs/input")
     public String input(Model model){
 
@@ -67,6 +86,13 @@ public class BlogController {
         return "admin/blogs-input";
     }
 
+    /**
+     * blog-input页面，新增，进入blog页面
+     * @param blog
+     * @param session
+     * @param attributes
+     * @return
+     */
     @PostMapping("/blogs")
     public String post(Blog blog, HttpSession session, RedirectAttributes attributes){
 
@@ -74,7 +100,12 @@ public class BlogController {
 
         blog.setType(typeService.getType(blog.getType().getId()));
         blog.setTags(tagService.listTag(blog.getTagIds()));
-        Blog blog1 = blogService.saveBlog(blog);
+        Blog blog1;
+        if(blog.getId() == null){
+             blog1 = blogService.saveBlog(blog);
+        }else {
+             blog1 = blogService.updateBlog(blog.getId(), blog);
+        }
 
         if(blog1 == null){
             attributes.addFlashAttribute("message", "新增失败");
@@ -86,12 +117,25 @@ public class BlogController {
     }
 
 
-//    @GetMapping("/blogs/{id}/input")
-//    public String editInput(Blog blog, @PathVariable Long id,  Model model){
-//        model.addAttribute("blog", blogService.getBlog(id));
-//        return "admin/blogs-input";
-//    }
+    /**
+     * blog页面：编辑，进入blog-input页面
+     * @param blog
+     * @param id
+     * @param model
+     * @return
+     */
+    @GetMapping("/blogs/{id}/input")
+    public String editInput(Blog blog, @PathVariable Long id,  Model model){
+        model.addAttribute("blog", blogService.getBlog(id));
+        return "admin/blogs-input";
+    }
 
+    /**
+     * blog页面:删除
+     * @param id
+     * @param attributes
+     * @return
+     */
     @GetMapping("/blogs/{id}/delete")
     public String delete(@PathVariable Long id, RedirectAttributes attributes){
         blogService.deleteBlog(id);
