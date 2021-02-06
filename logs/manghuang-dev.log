@@ -1402,3 +1402,38 @@ org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property o
 2021-01-26 17:30:41.248  INFO 1632 --- [http-nio-8080-exec-6] com.whw.manghuangblog.aspect.LogAspect   : ------------doBefore-----------Request : RequestLog{url='/', ip='0:0:0:0:0:0:0:1', className='com.whw.manghuangblog.web.IndexController.index', args=[]}
 2021-01-26 17:30:41.249  INFO 1632 --- [http-nio-8080-exec-6] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfterReturning-----------Result：index
 2021-01-26 17:30:41.249  INFO 1632 --- [http-nio-8080-exec-6] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfter-----------
+2021-02-01 17:14:22.152  INFO 15932 --- [restartedMain] c.w.m.ManghuangBlogApplication           : Starting ManghuangBlogApplication using Java 11.0.10 on DESKTOP-LEMKTGO with PID 15932 (C:\Users\xld\IdeaProjects\manghuang-blog\target\classes started by xld in C:\Users\xld\IdeaProjects\manghuang-blog)
+2021-02-01 17:14:22.168 DEBUG 15932 --- [restartedMain] c.w.m.ManghuangBlogApplication           : Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-02-01 17:14:22.169  INFO 15932 --- [restartedMain] c.w.m.ManghuangBlogApplication           : The following profiles are active: dev
+2021-02-01 17:14:22.378  INFO 15932 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-02-01 17:14:22.379  INFO 15932 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-02-01 17:14:23.799  INFO 15932 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-01 17:14:23.957  INFO 15932 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 147 ms. Found 4 JPA repository interfaces.
+2021-02-01 17:14:25.900  INFO 15932 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-01 17:14:25.927  INFO 15932 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-01 17:14:25.928  INFO 15932 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-01 17:14:26.172  INFO 15932 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-01 17:14:26.172  INFO 15932 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3791 ms
+2021-02-01 17:14:26.489  WARN 15932 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'blogServiceImpl': Unsatisfied dependency expressed through field 'blogReponsitory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'blogReponsitory' defined in com.whw.manghuangblog.dao.BlogReponsitory defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot create inner bean '(inner bean)#4a461446' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#4a461446': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'entityManagerFactory' available
+2021-02-01 17:14:26.492  INFO 15932 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-02-01 17:14:26.515  INFO 15932 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-02-01 17:14:26.562 ERROR 15932 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field blogReponsitory in com.whw.manghuangblog.service.BlogServiceImpl required a bean named 'entityManagerFactory' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean named 'entityManagerFactory' in your configuration.
+
