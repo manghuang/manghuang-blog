@@ -1,8 +1,6 @@
 package com.whw.manghuangblog.po;
 
 
-import com.sun.xml.bind.v2.model.core.ID;
-
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Date;
@@ -29,7 +27,7 @@ public class User {
     @OneToMany(mappedBy = "user")
     private List<Blog> blogs = new ArrayList<>();
 
-    public User(){
+    public User() {
 
     }
 

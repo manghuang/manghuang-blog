@@ -5,7 +5,6 @@ import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.zip.DataFormatException;
 
 @Entity
 @Table(name = "t_comment")

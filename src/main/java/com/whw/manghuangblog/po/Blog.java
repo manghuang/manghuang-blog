@@ -20,7 +20,7 @@ public class Blog {
     private Integer views;
     private Boolean appreciation;
     private Boolean shareStatement;
-    private Boolean commentabled;
+    private Boolean commentable;
     private Boolean published;
     private Boolean recommend;
     @Temporal(TemporalType.TIMESTAMP)
@@ -47,7 +47,8 @@ public class Blog {
 
     private String description;
 
-    public Blog(){
+
+    public Blog() {
 
     }
 
@@ -198,12 +199,12 @@ public class Blog {
         this.recommend = recommend;
     }
 
-    public Boolean getCommentabled() {
-        return commentabled;
+    public Boolean getCommentable() {
+        return commentable;
     }
 
-    public void setCommentabled(Boolean commentabled) {
-        this.commentabled = commentabled;
+    public void setCommentable(Boolean commentable) {
+        this.commentable = commentable;
     }
 
     @Override
@@ -217,7 +218,7 @@ public class Blog {
                 ", views=" + views +
                 ", appreciation=" + appreciation +
                 ", shareStatement=" + shareStatement +
-                ", commentabled=" + commentabled +
+                ", commentable=" + commentable +
                 ", published=" + published +
                 ", recommend=" + recommend +
                 ", createTime=" + createTime +
