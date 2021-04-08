@@ -1,6 +1,5 @@
 spring:
-  thymeleaf:
-    mode: HTML
+  #不同环境下加载不同的配置参数
   profiles:
     active: dev
 

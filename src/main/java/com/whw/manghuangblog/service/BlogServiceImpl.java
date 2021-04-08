@@ -28,13 +28,18 @@ public class BlogServiceImpl implements BlogService{
     @Autowired
     private BlogReponsitory blogReponsitory;
 
+    /**
+     * 按id查询blog
+     * @param id
+     * @return
+     */
     @Override
     public Blog getBlog(Long id) {
         return blogReponsitory.getOne(id);
     }
 
     /**
-     * 查询blog
+     * 查询某一页的blog
      * @param pageable
      * @param blog
      * @return
@@ -61,11 +66,21 @@ public class BlogServiceImpl implements BlogService{
 
     }
 
+    /**
+     * 查询所有blog
+     * @param pageable
+     * @return
+     */
     @Override
     public Page<Blog> listBlog(Pageable pageable) {
         return blogReponsitory.findAll(pageable);
     }
 
+    /**
+     * 查询一定数目的推荐blog
+     * @param size
+     * @return
+     */
     @Override
     public List<Blog> listRecommendBlogTop(Integer size) {
         Pageable pageable = PageRequest.of(0, 8, Sort.by(
