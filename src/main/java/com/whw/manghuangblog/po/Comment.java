@@ -16,6 +16,7 @@ public class Comment {
     private String nickname;
     private String email;
     private String content;
+    private String avatar;
     @Temporal(TemporalType.TIMESTAMP)
     private Date createTime;
 
@@ -23,7 +24,7 @@ public class Comment {
     private Blog blog;
 
     @OneToMany(mappedBy = "parentComment")
-    private List<Comment> replayComments = new ArrayList<>();
+    private List<Comment> replyComments = new ArrayList<>();
 
     @ManyToOne
     private Comment parentComment;
@@ -32,12 +33,20 @@ public class Comment {
 
     }
 
-    public List<Comment> getReplayComments() {
-        return replayComments;
+    public String getAvatar() {
+        return avatar;
     }
 
-    public void setReplayComments(List<Comment> replayComments) {
-        this.replayComments = replayComments;
+    public void setAvatar(String avatar) {
+        this.avatar = avatar;
+    }
+
+    public List<Comment> getReplyComments() {
+        return replyComments;
+    }
+
+    public void setReplyComments(List<Comment> replyComments) {
+        this.replyComments = replyComments;
     }
 
     public Comment getParentComment() {

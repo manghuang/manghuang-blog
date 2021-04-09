@@ -1,7 +1,9 @@
 package com.whw.manghuangblog.service;
 
+import com.whw.manghuangblog.Exception.NotFoundException;
 import com.whw.manghuangblog.dao.BlogReponsitory;
 import com.whw.manghuangblog.po.Blog;
+import com.whw.manghuangblog.util.MakedownUtils;
 import com.whw.manghuangblog.util.MyBeanUtils;
 import com.whw.manghuangblog.vo.BlogQuery;
 import org.springframework.beans.BeanUtils;
@@ -76,6 +78,12 @@ public class BlogServiceImpl implements BlogService{
         return blogReponsitory.findAll(pageable);
     }
 
+    @Override
+    public Page<Blog> listBlog(String query, Pageable pageable) {
+        Page<Blog> page = blogReponsitory.findByQuery(query, pageable);
+        return page;
+    }
+
     /**
      * 查询一定数目的推荐blog
      * @param size
@@ -127,5 +135,22 @@ public class BlogServiceImpl implements BlogService{
     @Override
     public void deleteBlog(Long id) {
         blogReponsitory.deleteById(id);
+    }
+
+    /**
+     * 按id查询blog，并将content从makedown格式转换为html格式
+     * @param id
+     * @return
+     */
+    @Override
+    public Blog getAndConvertBlog(long id) {
+        Blog blog = blogReponsitory.getOne(id);
+        if (blog == null){
+            throw new NotFoundException("该博客不存在");
+        }
+        Blog b = new Blog();
+        BeanUtils.copyProperties(blog, b);
+        b.setContent(MakedownUtils.makedownToHtml(b.getContent()));
+        return b;
     }
 }
