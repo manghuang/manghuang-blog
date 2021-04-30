@@ -142,6 +142,7 @@ public class BlogServiceImpl implements BlogService{
      * @param id
      * @return
      */
+    @Transactional
     @Override
     public Blog getAndConvertBlog(long id) {
         Blog blog = blogReponsitory.getOne(id);
@@ -151,6 +152,7 @@ public class BlogServiceImpl implements BlogService{
         Blog b = new Blog();
         BeanUtils.copyProperties(blog, b);
         b.setContent(MakedownUtils.makedownToHtml(b.getContent()));
+        blogReponsitory.updateViews(id);
         return b;
     }
 }
