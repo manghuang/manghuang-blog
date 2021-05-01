@@ -16,22 +16,20 @@ import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Predicate;
-import javax.persistence.criteria.Root;
+import javax.persistence.criteria.*;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 @Service
-public class BlogServiceImpl implements BlogService{
+public class BlogServiceImpl implements BlogService {
 
     @Autowired
     private BlogReponsitory blogReponsitory;
 
     /**
      * 按id查询blog
+     *
      * @param id
      * @return
      */
@@ -42,23 +40,24 @@ public class BlogServiceImpl implements BlogService{
 
     /**
      * 查询某一页的blog
+     *
      * @param pageable
      * @param blog
      * @return
      */
     @Override
     public Page<Blog> listBlog(Pageable pageable, BlogQuery blog) {
-        return  blogReponsitory.findAll(new Specification<Blog>() {
+        return blogReponsitory.findAll(new Specification<Blog>() {
             @Override
             public Predicate toPredicate(Root<Blog> root, CriteriaQuery<?> criteriaQuery, CriteriaBuilder criteriaBuilder) {
                 List<Predicate> predicates = new ArrayList<>();
-                if(!"".equals(blog.getTitle()) && blog.getTitle() != null){
-                    predicates.add(criteriaBuilder.like(root.get("title"), "%" + blog.getTitle()  + "%"));
+                if (!"".equals(blog.getTitle()) && blog.getTitle() != null) {
+                    predicates.add(criteriaBuilder.like(root.get("title"), "%" + blog.getTitle() + "%"));
                 }
-                if(blog.getTypeId()!= null){
+                if (blog.getTypeId() != null) {
                     predicates.add(criteriaBuilder.equal(root.get("type"), blog.getTypeId()));
                 }
-                if(blog.isRecommend()){
+                if (blog.isRecommend()) {
                     predicates.add(criteriaBuilder.equal(root.get("recommend"), blog.isRecommend()));
                 }
                 criteriaQuery.where(predicates.toArray(new Predicate[predicates.size()]));
@@ -70,12 +69,26 @@ public class BlogServiceImpl implements BlogService{
 
     /**
      * 查询所有blog
+     *
      * @param pageable
      * @return
      */
     @Override
     public Page<Blog> listBlog(Pageable pageable) {
         return blogReponsitory.findAll(pageable);
+    }
+
+    @Override
+    public Page<Blog> listBlog(Long tagId, Pageable pageable) {
+        // 关联查询
+        return blogReponsitory.findAll(new Specification<Blog>() {
+            @Override
+            public Predicate toPredicate(Root<Blog> root, CriteriaQuery<?> query, CriteriaBuilder criteriaBuilder) {
+                Join join = root.join("tags");
+
+                return criteriaBuilder.equal(join.get("id"), tagId);
+            }
+        }, pageable);
     }
 
     @Override
@@ -86,6 +99,7 @@ public class BlogServiceImpl implements BlogService{
 
     /**
      * 查询一定数目的推荐blog
+     *
      * @param size
      * @return
      */
@@ -99,6 +113,7 @@ public class BlogServiceImpl implements BlogService{
 
     /**
      * 新增blog
+     *
      * @param blog
      * @return
      */
@@ -114,6 +129,7 @@ public class BlogServiceImpl implements BlogService{
 
     /**
      * 更新blog
+     *
      * @param id
      * @param blog
      * @return
@@ -129,6 +145,7 @@ public class BlogServiceImpl implements BlogService{
 
     /**
      * 删除blog
+     *
      * @param id
      */
     @Transactional
@@ -139,6 +156,7 @@ public class BlogServiceImpl implements BlogService{
 
     /**
      * 按id查询blog，并将content从makedown格式转换为html格式
+     *
      * @param id
      * @return
      */
@@ -146,7 +164,7 @@ public class BlogServiceImpl implements BlogService{
     @Override
     public Blog getAndConvertBlog(long id) {
         Blog blog = blogReponsitory.getOne(id);
-        if (blog == null){
+        if (blog == null) {
             throw new NotFoundException("该博客不存在");
         }
         Blog b = new Blog();

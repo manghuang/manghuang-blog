@@ -1,38 +1,38 @@
-2021-04-30 09:58:08.718  INFO 8928 --- [restartedMain] c.w.m.ManghuangBlogApplication           : Starting ManghuangBlogApplication using Java 1.8.0_121 on DESKTOP-72Q8TJC with PID 8928 (C:\Users\12555\IdeaProjects\manghuang-blog\target\classes started by 12555 in C:\Users\12555\IdeaProjects\manghuang-blog)
-2021-04-30 09:58:08.735 DEBUG 8928 --- [restartedMain] c.w.m.ManghuangBlogApplication           : Running with Spring Boot v2.4.1, Spring v5.3.2
-2021-04-30 09:58:08.735  INFO 8928 --- [restartedMain] c.w.m.ManghuangBlogApplication           : The following profiles are active: dev
-2021-04-30 09:58:08.850  INFO 8928 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-04-30 09:58:08.851  INFO 8928 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-04-30 09:58:10.473  INFO 8928 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-04-30 09:58:10.769  INFO 8928 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 273 ms. Found 5 JPA repository interfaces.
-2021-04-30 09:58:12.040  INFO 8928 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-04-30 09:58:12.053  INFO 8928 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-04-30 09:58:12.054  INFO 8928 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-04-30 09:58:12.303  INFO 8928 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-04-30 09:58:12.304  INFO 8928 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3451 ms
-2021-04-30 09:58:12.784  INFO 8928 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-04-30 09:58:12.868  INFO 8928 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
-2021-04-30 09:58:13.100  INFO 8928 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2021-04-30 09:58:13.458  INFO 8928 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-04-30 09:58:15.471  INFO 8928 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-04-30 09:58:15.500  INFO 8928 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2021-04-30 09:58:17.158  INFO 8928 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-04-30 09:58:17.178  INFO 8928 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-04-30 09:58:17.331  INFO 8928 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2021-04-30 09:58:18.788  WARN 8928 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-04-30 09:58:18.957  INFO 8928 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-04-30 09:58:19.186  INFO 8928 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2021-04-30 09:58:20.679  INFO 8928 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-04-30 09:58:20.705  INFO 8928 --- [restartedMain] c.w.m.ManghuangBlogApplication           : Started ManghuangBlogApplication in 13.08 seconds (JVM running for 18.715)
-2021-04-30 09:58:37.936  INFO 8928 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-04-30 09:58:37.936  INFO 8928 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-04-30 09:58:37.938  INFO 8928 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2021-04-30 09:58:38.049  INFO 8928 --- [http-nio-8080-exec-1] com.whw.manghuangblog.aspect.LogAspect   : ------------doBefore-----------Request : RequestLog{url='/', ip='0:0:0:0:0:0:0:1', className='com.whw.manghuangblog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {map={gender=男, age=99}}]}
-2021-04-30 09:58:38.872  WARN 8928 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
-2021-04-30 09:58:38.897  WARN 8928 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
-2021-04-30 09:58:39.020  INFO 8928 --- [http-nio-8080-exec-1] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfterReturning-----------Result：index
-2021-04-30 09:58:39.021  INFO 8928 --- [http-nio-8080-exec-1] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfter-----------
-2021-04-30 09:58:40.394 ERROR 8928 --- [http-nio-8080-exec-1] c.w.m.I.ControllerExceptionHandler       : Request URL : /error, Exception ：{}
+2021-05-01 10:46:46.869  INFO 11708 --- [restartedMain] c.w.m.ManghuangBlogApplication           : Starting ManghuangBlogApplication using Java 1.8.0_121 on DESKTOP-72Q8TJC with PID 11708 (C:\Users\12555\IdeaProjects\manghuang-blog\target\classes started by 12555 in C:\Users\12555\IdeaProjects\manghuang-blog)
+2021-05-01 10:46:46.884 DEBUG 11708 --- [restartedMain] c.w.m.ManghuangBlogApplication           : Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-05-01 10:46:46.885  INFO 11708 --- [restartedMain] c.w.m.ManghuangBlogApplication           : The following profiles are active: dev
+2021-05-01 10:46:47.015  INFO 11708 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-01 10:46:47.015  INFO 11708 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-01 10:46:49.066  INFO 11708 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-01 10:46:49.356  INFO 11708 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 272 ms. Found 5 JPA repository interfaces.
+2021-05-01 10:46:51.278  INFO 11708 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-01 10:46:51.292  INFO 11708 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-01 10:46:51.294  INFO 11708 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-05-01 10:46:51.598  INFO 11708 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-01 10:46:51.599  INFO 11708 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4582 ms
+2021-05-01 10:46:52.142  INFO 11708 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-01 10:46:52.294  INFO 11708 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2021-05-01 10:46:52.682  INFO 11708 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-01 10:46:53.039  INFO 11708 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-01 10:46:55.181  INFO 11708 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-01 10:46:55.233  INFO 11708 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-05-01 10:46:57.251  INFO 11708 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-01 10:46:57.275  INFO 11708 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-01 10:46:57.361  INFO 11708 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-05-01 10:46:58.983  WARN 11708 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-01 10:46:59.160  INFO 11708 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-01 10:46:59.336  INFO 11708 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-05-01 10:47:03.495  INFO 11708 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-01 10:47:03.518  INFO 11708 --- [restartedMain] c.w.m.ManghuangBlogApplication           : Started ManghuangBlogApplication in 17.774 seconds (JVM running for 25.42)
+2021-05-01 10:47:51.363  INFO 11708 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-01 10:47:51.364  INFO 11708 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-01 10:47:51.368  INFO 11708 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2021-05-01 10:47:51.449  INFO 11708 --- [http-nio-8080-exec-1] com.whw.manghuangblog.aspect.LogAspect   : ------------doBefore-----------Request : RequestLog{url='/', ip='0:0:0:0:0:0:0:1', className='com.whw.manghuangblog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {map={gender=男, age=99}}]}
+2021-05-01 10:47:52.170  WARN 11708 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-05-01 10:47:52.226  WARN 11708 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-05-01 10:47:52.459  INFO 11708 --- [http-nio-8080-exec-1] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfterReturning-----------Result：index
+2021-05-01 10:47:52.461  INFO 11708 --- [http-nio-8080-exec-1] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfter-----------
+2021-05-01 10:47:53.873 ERROR 11708 --- [http-nio-8080-exec-1] c.w.m.I.ControllerExceptionHandler       : Request URL : /error, Exception ：{}
 
 org.springframework.http.converter.HttpMessageNotWritableException: No converter found for return value of type: class java.util.LinkedHashMap
 	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:220) ~[spring-webmvc-5.3.2.jar:5.3.2]
@@ -81,8 +81,8 @@ org.springframework.http.converter.HttpMessageNotWritableException: No converter
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.41.jar:9.0.41]
 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
 
-2021-04-30 09:58:40.397  WARN 8928 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: No converter found for return value of type: class java.util.LinkedHashMap]
-2021-04-30 09:58:43.816 ERROR 8928 --- [http-nio-8080-exec-6] c.w.m.I.ControllerExceptionHandler       : Request URL : /error, Exception ：{}
+2021-05-01 10:47:53.880  WARN 11708 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: No converter found for return value of type: class java.util.LinkedHashMap]
+2021-05-01 10:47:55.663 ERROR 11708 --- [http-nio-8080-exec-5] c.w.m.I.ControllerExceptionHandler       : Request URL : /error, Exception ：{}
 
 org.springframework.http.converter.HttpMessageNotWritableException: No converter found for return value of type: class java.util.LinkedHashMap
 	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:220) ~[spring-webmvc-5.3.2.jar:5.3.2]
@@ -131,192 +131,336 @@ org.springframework.http.converter.HttpMessageNotWritableException: No converter
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.41.jar:9.0.41]
 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
 
-2021-04-30 09:58:43.817  WARN 8928 --- [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: No converter found for return value of type: class java.util.LinkedHashMap]
-2021-04-30 09:58:50.535  INFO 8928 --- [http-nio-8080-exec-3] com.whw.manghuangblog.aspect.LogAspect   : ------------doBefore-----------Request : RequestLog{url='/blog/12', ip='0:0:0:0:0:0:0:1', className='com.whw.manghuangblog.web.IndexController.blog', args=[12, {map={gender=男, age=99}}]}
-2021-04-30 09:58:50.664  INFO 8928 --- [http-nio-8080-exec-3] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfterReturning-----------Result：blog
-2021-04-30 09:58:50.665  INFO 8928 --- [http-nio-8080-exec-3] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfter-----------
-2021-04-30 09:58:52.173  INFO 8928 --- [http-nio-8080-exec-10] com.whw.manghuangblog.aspect.LogAspect   : ------------doBefore-----------Request : RequestLog{url='/comments/12', ip='0:0:0:0:0:0:0:1', className='com.whw.manghuangblog.web.CommentController.comments', args=[12, {map={gender=男, age=99}}]}
-2021-04-30 09:58:52.257  INFO 8928 --- [http-nio-8080-exec-10] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfterReturning-----------Result：blog :: commentList
-2021-04-30 09:58:52.258  INFO 8928 --- [http-nio-8080-exec-10] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfter-----------
-2021-04-30 10:22:44.587  INFO 2200 --- [restartedMain] c.w.m.ManghuangBlogApplication           : Starting ManghuangBlogApplication using Java 1.8.0_121 on DESKTOP-72Q8TJC with PID 2200 (C:\Users\12555\IdeaProjects\manghuang-blog\target\classes started by 12555 in C:\Users\12555\IdeaProjects\manghuang-blog)
-2021-04-30 10:22:44.599 DEBUG 2200 --- [restartedMain] c.w.m.ManghuangBlogApplication           : Running with Spring Boot v2.4.1, Spring v5.3.2
-2021-04-30 10:22:44.600  INFO 2200 --- [restartedMain] c.w.m.ManghuangBlogApplication           : The following profiles are active: dev
-2021-04-30 10:22:44.793  INFO 2200 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-04-30 10:22:44.794  INFO 2200 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-04-30 10:22:45.871  INFO 2200 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-04-30 10:22:46.055  INFO 2200 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 172 ms. Found 5 JPA repository interfaces.
-2021-04-30 10:22:47.257  INFO 2200 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-04-30 10:22:47.271  INFO 2200 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-04-30 10:22:47.272  INFO 2200 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-04-30 10:22:47.505  INFO 2200 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-04-30 10:22:47.505  INFO 2200 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2710 ms
-2021-04-30 10:22:47.925  INFO 2200 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-04-30 10:22:47.994  INFO 2200 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
-2021-04-30 10:22:48.241  INFO 2200 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2021-04-30 10:22:48.509  INFO 2200 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-04-30 10:22:50.026  INFO 2200 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-04-30 10:22:50.069  INFO 2200 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2021-04-30 10:22:51.446  INFO 2200 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-04-30 10:22:51.458  INFO 2200 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-04-30 10:22:51.546  INFO 2200 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2021-04-30 10:22:53.117  WARN 2200 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-04-30 10:22:53.263  INFO 2200 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-04-30 10:22:53.451  INFO 2200 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2021-04-30 10:22:54.796  INFO 2200 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-04-30 10:22:54.805  INFO 2200 --- [restartedMain] c.w.m.ManghuangBlogApplication           : Started ManghuangBlogApplication in 11.445 seconds (JVM running for 15.799)
-2021-04-30 10:27:23.159  INFO 2200 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-04-30 10:27:23.160  INFO 2200 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-04-30 10:27:23.162  INFO 2200 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2021-04-30 10:27:23.245  INFO 2200 --- [http-nio-8080-exec-1] com.whw.manghuangblog.aspect.LogAspect   : ------------doBefore-----------Request : RequestLog{url='/blog/12', ip='0:0:0:0:0:0:0:1', className='com.whw.manghuangblog.web.IndexController.blog', args=[12, {map={gender=男, age=99}}]}
-2021-04-30 10:27:23.583  INFO 2200 --- [http-nio-8080-exec-1] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfterReturning-----------Result：blog
-2021-04-30 10:27:23.583  INFO 2200 --- [http-nio-8080-exec-1] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfter-----------
-2021-04-30 10:27:25.479  INFO 2200 --- [http-nio-8080-exec-1] com.whw.manghuangblog.aspect.LogAspect   : ------------doBefore-----------Request : RequestLog{url='/comments/12', ip='0:0:0:0:0:0:0:1', className='com.whw.manghuangblog.web.CommentController.comments', args=[12, {map={gender=男, age=99}}]}
-2021-04-30 10:27:25.609  INFO 2200 --- [http-nio-8080-exec-1] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfterReturning-----------Result：blog :: commentList
-2021-04-30 10:27:25.610  INFO 2200 --- [http-nio-8080-exec-1] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfter-----------
-2021-04-30 10:29:23.429  INFO 4640 --- [restartedMain] c.w.m.ManghuangBlogApplication           : Starting ManghuangBlogApplication using Java 1.8.0_121 on DESKTOP-72Q8TJC with PID 4640 (C:\Users\12555\IdeaProjects\manghuang-blog\target\classes started by 12555 in C:\Users\12555\IdeaProjects\manghuang-blog)
-2021-04-30 10:29:23.436 DEBUG 4640 --- [restartedMain] c.w.m.ManghuangBlogApplication           : Running with Spring Boot v2.4.1, Spring v5.3.2
-2021-04-30 10:29:23.437  INFO 4640 --- [restartedMain] c.w.m.ManghuangBlogApplication           : The following profiles are active: dev
-2021-04-30 10:29:23.540  INFO 4640 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-04-30 10:29:23.541  INFO 4640 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-04-30 10:29:24.621  INFO 4640 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-04-30 10:29:24.840  INFO 4640 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 208 ms. Found 5 JPA repository interfaces.
-2021-04-30 10:29:25.929  INFO 4640 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-04-30 10:29:25.941  INFO 4640 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-04-30 10:29:25.942  INFO 4640 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-04-30 10:29:26.243  INFO 4640 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-04-30 10:29:26.244  INFO 4640 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2702 ms
-2021-04-30 10:29:26.535  INFO 4640 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-04-30 10:29:26.592  INFO 4640 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
-2021-04-30 10:29:26.781  INFO 4640 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2021-04-30 10:29:27.025  INFO 4640 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-04-30 10:29:28.299  INFO 4640 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-04-30 10:29:28.337  INFO 4640 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2021-04-30 10:29:29.416  INFO 4640 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-04-30 10:29:29.435  INFO 4640 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-04-30 10:29:29.527  INFO 4640 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2021-04-30 10:29:30.482  WARN 4640 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-04-30 10:29:30.597  INFO 4640 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-04-30 10:29:30.723  INFO 4640 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2021-04-30 10:29:31.958  INFO 4640 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-04-30 10:29:31.968  INFO 4640 --- [restartedMain] c.w.m.ManghuangBlogApplication           : Started ManghuangBlogApplication in 9.958 seconds (JVM running for 14.218)
-2021-04-30 10:29:46.387  INFO 4640 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-04-30 10:29:46.388  INFO 4640 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-04-30 10:29:46.389  INFO 4640 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2021-04-30 10:29:46.451  INFO 4640 --- [http-nio-8080-exec-1] com.whw.manghuangblog.aspect.LogAspect   : ------------doBefore-----------Request : RequestLog{url='/blog/12', ip='0:0:0:0:0:0:0:1', className='com.whw.manghuangblog.web.IndexController.blog', args=[12, {map={gender=男, age=99}}]}
-2021-04-30 10:29:46.639  INFO 4640 --- [http-nio-8080-exec-1] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfterReturning-----------Result：blog
-2021-04-30 10:29:46.639  INFO 4640 --- [http-nio-8080-exec-1] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfter-----------
-2021-04-30 10:29:48.089  INFO 4640 --- [http-nio-8080-exec-3] com.whw.manghuangblog.aspect.LogAspect   : ------------doBefore-----------Request : RequestLog{url='/comments/12', ip='0:0:0:0:0:0:0:1', className='com.whw.manghuangblog.web.CommentController.comments', args=[12, {map={gender=男, age=99}}]}
-2021-04-30 10:29:48.237  INFO 4640 --- [http-nio-8080-exec-3] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfterReturning-----------Result：blog :: commentList
-2021-04-30 10:29:48.238  INFO 4640 --- [http-nio-8080-exec-3] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfter-----------
-2021-04-30 11:12:15.611  INFO 3304 --- [restartedMain] c.w.m.ManghuangBlogApplication           : Starting ManghuangBlogApplication using Java 1.8.0_121 on DESKTOP-72Q8TJC with PID 3304 (C:\Users\12555\IdeaProjects\manghuang-blog\target\classes started by 12555 in C:\Users\12555\IdeaProjects\manghuang-blog)
-2021-04-30 11:12:15.614 DEBUG 3304 --- [restartedMain] c.w.m.ManghuangBlogApplication           : Running with Spring Boot v2.4.1, Spring v5.3.2
-2021-04-30 11:12:15.614  INFO 3304 --- [restartedMain] c.w.m.ManghuangBlogApplication           : The following profiles are active: dev
-2021-04-30 11:12:15.678  INFO 3304 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-04-30 11:12:15.678  INFO 3304 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-04-30 11:12:17.126  INFO 3304 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-04-30 11:12:17.628  INFO 3304 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 488 ms. Found 5 JPA repository interfaces.
-2021-04-30 11:12:18.582  INFO 3304 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-04-30 11:12:18.593  INFO 3304 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-04-30 11:12:18.593  INFO 3304 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-04-30 11:12:18.788  INFO 3304 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-04-30 11:12:18.788  INFO 3304 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3108 ms
-2021-04-30 11:12:19.155  INFO 3304 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-04-30 11:12:19.210  INFO 3304 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
-2021-04-30 11:12:19.353  INFO 3304 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2021-04-30 11:12:19.642  INFO 3304 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-04-30 11:12:20.911  INFO 3304 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-04-30 11:12:20.941  INFO 3304 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2021-04-30 11:12:23.232  INFO 3304 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-04-30 11:12:23.244  INFO 3304 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-04-30 11:12:23.326  INFO 3304 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2021-04-30 11:12:24.303  WARN 3304 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-04-30 11:12:24.484  INFO 3304 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-04-30 11:12:24.641  INFO 3304 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2021-04-30 11:12:25.779  INFO 3304 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-04-30 11:12:25.792  INFO 3304 --- [restartedMain] c.w.m.ManghuangBlogApplication           : Started ManghuangBlogApplication in 10.94 seconds (JVM running for 14.56)
-2021-04-30 11:12:44.661  INFO 3304 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-04-30 11:12:44.666  INFO 3304 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-04-30 11:12:44.669  INFO 3304 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2021-04-30 11:12:44.751  INFO 3304 --- [http-nio-8080-exec-1] com.whw.manghuangblog.aspect.LogAspect   : ------------doBefore-----------Request : RequestLog{url='/blog/12', ip='0:0:0:0:0:0:0:1', className='com.whw.manghuangblog.web.IndexController.blog', args=[12, {map={gender=男, age=99}}]}
-2021-04-30 11:12:45.038  INFO 3304 --- [http-nio-8080-exec-1] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfterReturning-----------Result：blog
-2021-04-30 11:12:45.038  INFO 3304 --- [http-nio-8080-exec-1] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfter-----------
-2021-04-30 11:12:47.016  INFO 3304 --- [http-nio-8080-exec-4] com.whw.manghuangblog.aspect.LogAspect   : ------------doBefore-----------Request : RequestLog{url='/comments/12', ip='0:0:0:0:0:0:0:1', className='com.whw.manghuangblog.web.CommentController.comments', args=[12, {map={gender=男, age=99}}]}
-2021-04-30 11:12:47.239  INFO 3304 --- [http-nio-8080-exec-4] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfterReturning-----------Result：blog :: commentList
-2021-04-30 11:12:47.240  INFO 3304 --- [http-nio-8080-exec-4] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfter-----------
-2021-04-30 11:13:26.950  INFO 3304 --- [http-nio-8080-exec-3] com.whw.manghuangblog.aspect.LogAspect   : ------------doBefore-----------Request : RequestLog{url='/comments', ip='0:0:0:0:0:0:0:1', className='com.whw.manghuangblog.web.CommentController.post', args=[Comment{id=null, nickname='whw', email='1255529524@qq.com', content='非管理员评论', avatar='null', createTime=null, blog=Blog{id=12, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=null, shareStatement=null, commentable=null, published=null, recommend=null, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds='null', description='null'}, replyComments=[], parentComment=Comment{id=-1, nickname='null', email='null', content='null', avatar='null', createTime=null, blog=null, replyComments=[], parentComment=null, adminComment=false}, adminComment=false}, org.apache.catalina.session.StandardSessionFacade@24e946d5]}
-2021-04-30 11:13:27.456  INFO 3304 --- [http-nio-8080-exec-3] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfterReturning-----------Result：redirect:/comments/12
-2021-04-30 11:13:27.456  INFO 3304 --- [http-nio-8080-exec-3] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfter-----------
-2021-04-30 11:13:27.470  INFO 3304 --- [http-nio-8080-exec-5] com.whw.manghuangblog.aspect.LogAspect   : ------------doBefore-----------Request : RequestLog{url='/comments/12;jsessionid=9E17AC7DC168F0FC870BD383C1658DB8', ip='0:0:0:0:0:0:0:1', className='com.whw.manghuangblog.web.CommentController.comments', args=[12, {map={gender=男, age=99}}]}
-2021-04-30 11:13:27.486  INFO 3304 --- [http-nio-8080-exec-5] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfterReturning-----------Result：blog :: commentList
-2021-04-30 11:13:27.488  INFO 3304 --- [http-nio-8080-exec-5] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfter-----------
-2021-04-30 11:13:49.808  INFO 3304 --- [http-nio-8080-exec-5] com.whw.manghuangblog.aspect.LogAspect   : ------------doBefore-----------Request : RequestLog{url='/blog/12', ip='0:0:0:0:0:0:0:1', className='com.whw.manghuangblog.web.IndexController.blog', args=[12, {map={gender=男, age=99}}]}
-2021-04-30 11:13:49.818  INFO 3304 --- [http-nio-8080-exec-5] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfterReturning-----------Result：blog
-2021-04-30 11:13:49.819  INFO 3304 --- [http-nio-8080-exec-5] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfter-----------
-2021-04-30 11:13:50.533  INFO 3304 --- [http-nio-8080-exec-6] com.whw.manghuangblog.aspect.LogAspect   : ------------doBefore-----------Request : RequestLog{url='/comments/12', ip='0:0:0:0:0:0:0:1', className='com.whw.manghuangblog.web.CommentController.comments', args=[12, {map={gender=男, age=99}}]}
-2021-04-30 11:13:50.563  INFO 3304 --- [http-nio-8080-exec-6] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfterReturning-----------Result：blog :: commentList
-2021-04-30 11:13:50.564  INFO 3304 --- [http-nio-8080-exec-6] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfter-----------
-2021-04-30 11:14:05.587  INFO 3304 --- [http-nio-8080-exec-1] com.whw.manghuangblog.aspect.LogAspect   : ------------doBefore-----------Request : RequestLog{url='/comments', ip='0:0:0:0:0:0:0:1', className='com.whw.manghuangblog.web.CommentController.post', args=[Comment{id=null, nickname='manghuang', email='1255529524@qq.com', content='管理员评论', avatar='null', createTime=null, blog=Blog{id=12, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=null, shareStatement=null, commentable=null, published=null, recommend=null, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds='null', description='null'}, replyComments=[], parentComment=Comment{id=-1, nickname='null', email='null', content='null', avatar='null', createTime=null, blog=null, replyComments=[], parentComment=null, adminComment=false}, adminComment=false}, org.apache.catalina.session.StandardSessionFacade@24e946d5]}
-2021-04-30 11:14:05.741  INFO 3304 --- [http-nio-8080-exec-1] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfterReturning-----------Result：redirect:/comments/12
-2021-04-30 11:14:05.741  INFO 3304 --- [http-nio-8080-exec-1] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfter-----------
-2021-04-30 11:14:05.756  INFO 3304 --- [http-nio-8080-exec-3] com.whw.manghuangblog.aspect.LogAspect   : ------------doBefore-----------Request : RequestLog{url='/comments/12', ip='0:0:0:0:0:0:0:1', className='com.whw.manghuangblog.web.CommentController.comments', args=[12, {map={gender=男, age=99}}]}
-2021-04-30 11:14:05.782  INFO 3304 --- [http-nio-8080-exec-3] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfterReturning-----------Result：blog :: commentList
-2021-04-30 11:14:05.782  INFO 3304 --- [http-nio-8080-exec-3] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfter-----------
-2021-04-30 11:15:01.957  INFO 3304 --- [http-nio-8080-exec-6] com.whw.manghuangblog.aspect.LogAspect   : ------------doBefore-----------Request : RequestLog{url='/comments', ip='0:0:0:0:0:0:0:1', className='com.whw.manghuangblog.web.CommentController.post', args=[Comment{id=null, nickname='manghuang', email='1255529524@qq.com', content='1', avatar='null', createTime=null, blog=Blog{id=12, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=null, shareStatement=null, commentable=null, published=null, recommend=null, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds='null', description='null'}, replyComments=[], parentComment=Comment{id=19, nickname='null', email='null', content='null', avatar='null', createTime=null, blog=null, replyComments=[], parentComment=null, adminComment=false}, adminComment=false}, org.apache.catalina.session.StandardSessionFacade@24e946d5]}
-2021-04-30 11:15:02.420  INFO 3304 --- [http-nio-8080-exec-6] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfterReturning-----------Result：redirect:/comments/12
-2021-04-30 11:15:02.420  INFO 3304 --- [http-nio-8080-exec-6] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfter-----------
-2021-04-30 11:15:02.424  INFO 3304 --- [http-nio-8080-exec-2] com.whw.manghuangblog.aspect.LogAspect   : ------------doBefore-----------Request : RequestLog{url='/comments/12', ip='0:0:0:0:0:0:0:1', className='com.whw.manghuangblog.web.CommentController.comments', args=[12, {map={gender=男, age=99}}]}
-2021-04-30 11:15:02.449  INFO 3304 --- [http-nio-8080-exec-2] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfterReturning-----------Result：blog :: commentList
-2021-04-30 11:15:02.449  INFO 3304 --- [http-nio-8080-exec-2] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfter-----------
-2021-04-30 11:22:26.847  INFO 11780 --- [restartedMain] c.w.m.ManghuangBlogApplication           : Starting ManghuangBlogApplication using Java 1.8.0_121 on DESKTOP-72Q8TJC with PID 11780 (C:\Users\12555\IdeaProjects\manghuang-blog\target\classes started by 12555 in C:\Users\12555\IdeaProjects\manghuang-blog)
-2021-04-30 11:22:26.851 DEBUG 11780 --- [restartedMain] c.w.m.ManghuangBlogApplication           : Running with Spring Boot v2.4.1, Spring v5.3.2
-2021-04-30 11:22:26.852  INFO 11780 --- [restartedMain] c.w.m.ManghuangBlogApplication           : The following profiles are active: dev
-2021-04-30 11:22:26.947  INFO 11780 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-04-30 11:22:26.949  INFO 11780 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-04-30 11:22:28.069  INFO 11780 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-04-30 11:22:28.265  INFO 11780 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 183 ms. Found 5 JPA repository interfaces.
-2021-04-30 11:22:29.382  INFO 11780 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-04-30 11:22:29.393  INFO 11780 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-04-30 11:22:29.393  INFO 11780 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-04-30 11:22:29.609  INFO 11780 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-04-30 11:22:29.609  INFO 11780 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2632 ms
-2021-04-30 11:22:29.899  INFO 11780 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-04-30 11:22:29.957  INFO 11780 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
-2021-04-30 11:22:30.137  INFO 11780 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2021-04-30 11:22:30.414  INFO 11780 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-04-30 11:22:32.128  INFO 11780 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-04-30 11:22:32.157  INFO 11780 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2021-04-30 11:22:33.253  INFO 11780 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-04-30 11:22:33.266  INFO 11780 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-04-30 11:22:33.343  INFO 11780 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2021-04-30 11:22:34.315  WARN 11780 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-04-30 11:22:34.444  INFO 11780 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-04-30 11:22:34.572  INFO 11780 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2021-04-30 11:22:35.711  INFO 11780 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-04-30 11:22:35.725  INFO 11780 --- [restartedMain] c.w.m.ManghuangBlogApplication           : Started ManghuangBlogApplication in 9.747 seconds (JVM running for 13.441)
-2021-04-30 11:22:45.121  INFO 11780 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-04-30 11:22:45.122  INFO 11780 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-04-30 11:22:45.127  INFO 11780 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2021-04-30 11:22:45.195  INFO 11780 --- [http-nio-8080-exec-1] com.whw.manghuangblog.aspect.LogAspect   : ------------doBefore-----------Request : RequestLog{url='/blog/12', ip='0:0:0:0:0:0:0:1', className='com.whw.manghuangblog.web.IndexController.blog', args=[12, {map={gender=男, age=99}}]}
-2021-04-30 11:22:45.787  INFO 11780 --- [http-nio-8080-exec-1] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfterReturning-----------Result：blog
-2021-04-30 11:22:45.787  INFO 11780 --- [http-nio-8080-exec-1] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfter-----------
-2021-04-30 11:22:47.434  INFO 11780 --- [http-nio-8080-exec-1] com.whw.manghuangblog.aspect.LogAspect   : ------------doBefore-----------Request : RequestLog{url='/comments/12', ip='0:0:0:0:0:0:0:1', className='com.whw.manghuangblog.web.CommentController.comments', args=[12, {map={gender=男, age=99}}]}
-2021-04-30 11:22:47.561  INFO 11780 --- [http-nio-8080-exec-1] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfterReturning-----------Result：blog :: commentList
-2021-04-30 11:22:47.562  INFO 11780 --- [http-nio-8080-exec-1] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfter-----------
-2021-04-30 11:22:50.002  INFO 11780 --- [http-nio-8080-exec-2] com.whw.manghuangblog.aspect.LogAspect   : ------------doBefore-----------Request : RequestLog{url='/blog/12', ip='0:0:0:0:0:0:0:1', className='com.whw.manghuangblog.web.IndexController.blog', args=[12, {map={gender=男, age=99}}]}
-2021-04-30 11:22:50.148  INFO 11780 --- [http-nio-8080-exec-2] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfterReturning-----------Result：blog
-2021-04-30 11:22:50.148  INFO 11780 --- [http-nio-8080-exec-2] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfter-----------
-2021-04-30 11:22:50.703  INFO 11780 --- [http-nio-8080-exec-8] com.whw.manghuangblog.aspect.LogAspect   : ------------doBefore-----------Request : RequestLog{url='/comments/12', ip='0:0:0:0:0:0:0:1', className='com.whw.manghuangblog.web.CommentController.comments', args=[12, {map={gender=男, age=99}}]}
-2021-04-30 11:22:50.739  INFO 11780 --- [http-nio-8080-exec-8] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfterReturning-----------Result：blog :: commentList
-2021-04-30 11:22:50.739  INFO 11780 --- [http-nio-8080-exec-8] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfter-----------
-2021-04-30 11:22:52.542  INFO 11780 --- [http-nio-8080-exec-4] com.whw.manghuangblog.aspect.LogAspect   : ------------doBefore-----------Request : RequestLog{url='/blog/12', ip='0:0:0:0:0:0:0:1', className='com.whw.manghuangblog.web.IndexController.blog', args=[12, {map={gender=男, age=99}}]}
-2021-04-30 11:22:52.589  INFO 11780 --- [http-nio-8080-exec-4] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfterReturning-----------Result：blog
-2021-04-30 11:22:52.589  INFO 11780 --- [http-nio-8080-exec-4] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfter-----------
-2021-04-30 11:22:53.289  INFO 11780 --- [http-nio-8080-exec-6] com.whw.manghuangblog.aspect.LogAspect   : ------------doBefore-----------Request : RequestLog{url='/comments/12', ip='0:0:0:0:0:0:0:1', className='com.whw.manghuangblog.web.CommentController.comments', args=[12, {map={gender=男, age=99}}]}
-2021-04-30 11:22:53.317  INFO 11780 --- [http-nio-8080-exec-6] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfterReturning-----------Result：blog :: commentList
-2021-04-30 11:22:53.317  INFO 11780 --- [http-nio-8080-exec-6] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfter-----------
-2021-04-30 11:22:55.130  INFO 11780 --- [http-nio-8080-exec-2] com.whw.manghuangblog.aspect.LogAspect   : ------------doBefore-----------Request : RequestLog{url='/blog/12', ip='0:0:0:0:0:0:0:1', className='com.whw.manghuangblog.web.IndexController.blog', args=[12, {map={gender=男, age=99}}]}
-2021-04-30 11:22:55.279  INFO 11780 --- [http-nio-8080-exec-2] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfterReturning-----------Result：blog
-2021-04-30 11:22:55.280  INFO 11780 --- [http-nio-8080-exec-2] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfter-----------
-2021-04-30 11:22:55.944  INFO 11780 --- [http-nio-8080-exec-9] com.whw.manghuangblog.aspect.LogAspect   : ------------doBefore-----------Request : RequestLog{url='/comments/12', ip='0:0:0:0:0:0:0:1', className='com.whw.manghuangblog.web.CommentController.comments', args=[12, {map={gender=男, age=99}}]}
-2021-04-30 11:22:55.976  INFO 11780 --- [http-nio-8080-exec-9] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfterReturning-----------Result：blog :: commentList
-2021-04-30 11:22:55.976  INFO 11780 --- [http-nio-8080-exec-9] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfter-----------
+2021-05-01 10:47:55.663  WARN 11708 --- [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: No converter found for return value of type: class java.util.LinkedHashMap]
+2021-05-01 10:47:57.557  INFO 11708 --- [http-nio-8080-exec-2] com.whw.manghuangblog.aspect.LogAspect   : ------------doBefore-----------Request : RequestLog{url='/types/-1', ip='0:0:0:0:0:0:0:1', className='com.whw.manghuangblog.web.TagShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {map={gender=男, age=99}}]}
+2021-05-01 10:47:57.585  INFO 11708 --- [http-nio-8080-exec-2] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfterReturning-----------Result：types
+2021-05-01 10:47:57.586  INFO 11708 --- [http-nio-8080-exec-2] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfter-----------
+2021-05-01 10:48:03.534  INFO 11708 --- [http-nio-8080-exec-8] com.whw.manghuangblog.aspect.LogAspect   : ------------doBefore-----------Request : RequestLog{url='/types/5', ip='0:0:0:0:0:0:0:1', className='com.whw.manghuangblog.web.TagShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 5, {map={gender=男, age=99}}]}
+2021-05-01 10:48:03.552  INFO 11708 --- [http-nio-8080-exec-8] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfterReturning-----------Result：types
+2021-05-01 10:48:03.553  INFO 11708 --- [http-nio-8080-exec-8] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfter-----------
+2021-05-01 10:48:10.925  INFO 11708 --- [http-nio-8080-exec-9] com.whw.manghuangblog.aspect.LogAspect   : ------------doBefore-----------Request : RequestLog{url='/types/9', ip='0:0:0:0:0:0:0:1', className='com.whw.manghuangblog.web.TagShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 9, {map={gender=男, age=99}}]}
+2021-05-01 10:48:10.943  INFO 11708 --- [http-nio-8080-exec-9] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfterReturning-----------Result：types
+2021-05-01 10:48:10.944  INFO 11708 --- [http-nio-8080-exec-9] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfter-----------
+2021-05-01 10:48:12.441  INFO 11708 --- [http-nio-8080-exec-6] com.whw.manghuangblog.aspect.LogAspect   : ------------doBefore-----------Request : RequestLog{url='/types/5', ip='0:0:0:0:0:0:0:1', className='com.whw.manghuangblog.web.TagShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 5, {map={gender=男, age=99}}]}
+2021-05-01 10:48:12.467  INFO 11708 --- [http-nio-8080-exec-6] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfterReturning-----------Result：types
+2021-05-01 10:48:12.468  INFO 11708 --- [http-nio-8080-exec-6] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfter-----------
+2021-05-01 10:48:47.357  INFO 11708 --- [http-nio-8080-exec-1] com.whw.manghuangblog.aspect.LogAspect   : ------------doBefore-----------Request : RequestLog{url='/types/6', ip='0:0:0:0:0:0:0:1', className='com.whw.manghuangblog.web.TagShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 6, {map={gender=男, age=99}}]}
+2021-05-01 10:48:47.373  INFO 11708 --- [http-nio-8080-exec-1] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfterReturning-----------Result：types
+2021-05-01 10:48:47.374  INFO 11708 --- [http-nio-8080-exec-1] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfter-----------
+2021-05-01 10:48:52.250  INFO 11708 --- [http-nio-8080-exec-6] com.whw.manghuangblog.aspect.LogAspect   : ------------doBefore-----------Request : RequestLog{url='/types/9', ip='0:0:0:0:0:0:0:1', className='com.whw.manghuangblog.web.TagShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 9, {map={gender=男, age=99}}]}
+2021-05-01 10:48:52.262  INFO 11708 --- [http-nio-8080-exec-6] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfterReturning-----------Result：types
+2021-05-01 10:48:52.263  INFO 11708 --- [http-nio-8080-exec-6] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfter-----------
+2021-05-01 10:49:06.045  INFO 11708 --- [http-nio-8080-exec-10] com.whw.manghuangblog.aspect.LogAspect   : ------------doBefore-----------Request : RequestLog{url='/', ip='0:0:0:0:0:0:0:1', className='com.whw.manghuangblog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {map={gender=男, age=99}}]}
+2021-05-01 10:49:06.070  INFO 11708 --- [http-nio-8080-exec-10] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfterReturning-----------Result：index
+2021-05-01 10:49:06.070  INFO 11708 --- [http-nio-8080-exec-10] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfter-----------
+2021-05-01 10:49:06.227 ERROR 11708 --- [http-nio-8080-exec-3] c.w.m.I.ControllerExceptionHandler       : Request URL : /error, Exception ：{}
+
+org.springframework.http.converter.HttpMessageNotWritableException: No converter found for return value of type: class java.util.LinkedHashMap
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:220) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor.handleReturnValue(HttpEntityMethodProcessor.java:219) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:78) ~[spring-web-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:124) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1061) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) [spring-webmvc-5.3.2.jar:5.3.2]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) [tomcat-embed-core-9.0.41.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.3.2.jar:5.3.2]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) [tomcat-embed-core-9.0.41.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.3.2.jar:5.3.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.2.jar:5.3.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) [spring-web-5.3.2.jar:5.3.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) [spring-web-5.3.2.jar:5.3.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:398) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:257) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:179) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+
+2021-05-01 10:49:06.228  WARN 11708 --- [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: No converter found for return value of type: class java.util.LinkedHashMap]
+2021-05-01 10:49:11.304  INFO 11708 --- [http-nio-8080-exec-1] com.whw.manghuangblog.aspect.LogAspect   : ------------doBefore-----------Request : RequestLog{url='/types/-1', ip='0:0:0:0:0:0:0:1', className='com.whw.manghuangblog.web.TagShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {map={gender=男, age=99}}]}
+2021-05-01 10:49:11.314  INFO 11708 --- [http-nio-8080-exec-1] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfterReturning-----------Result：types
+2021-05-01 10:49:11.315  INFO 11708 --- [http-nio-8080-exec-1] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfter-----------
+2021-05-01 10:49:12.657  INFO 11708 --- [http-nio-8080-exec-9] com.whw.manghuangblog.aspect.LogAspect   : ------------doBefore-----------Request : RequestLog{url='/', ip='0:0:0:0:0:0:0:1', className='com.whw.manghuangblog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {map={gender=男, age=99}}]}
+2021-05-01 10:49:12.678  INFO 11708 --- [http-nio-8080-exec-9] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfterReturning-----------Result：index
+2021-05-01 10:49:12.678  INFO 11708 --- [http-nio-8080-exec-9] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfter-----------
+2021-05-01 10:49:12.859 ERROR 11708 --- [http-nio-8080-exec-10] c.w.m.I.ControllerExceptionHandler       : Request URL : /error, Exception ：{}
+
+org.springframework.http.converter.HttpMessageNotWritableException: No converter found for return value of type: class java.util.LinkedHashMap
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:220) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor.handleReturnValue(HttpEntityMethodProcessor.java:219) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:78) ~[spring-web-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:124) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1061) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) [spring-webmvc-5.3.2.jar:5.3.2]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) [tomcat-embed-core-9.0.41.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.3.2.jar:5.3.2]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) [tomcat-embed-core-9.0.41.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.3.2.jar:5.3.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.2.jar:5.3.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) [spring-web-5.3.2.jar:5.3.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) [spring-web-5.3.2.jar:5.3.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:398) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:257) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:179) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+
+2021-05-01 10:49:12.860  WARN 11708 --- [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: No converter found for return value of type: class java.util.LinkedHashMap]
+2021-05-01 10:49:13.887  INFO 11708 --- [http-nio-8080-exec-6] com.whw.manghuangblog.aspect.LogAspect   : ------------doBefore-----------Request : RequestLog{url='/types/-1', ip='0:0:0:0:0:0:0:1', className='com.whw.manghuangblog.web.TagShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {map={gender=男, age=99}}]}
+2021-05-01 10:49:13.896  INFO 11708 --- [http-nio-8080-exec-6] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfterReturning-----------Result：types
+2021-05-01 10:49:13.897  INFO 11708 --- [http-nio-8080-exec-6] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfter-----------
+2021-05-01 10:49:14.753  INFO 11708 --- [http-nio-8080-exec-5] com.whw.manghuangblog.aspect.LogAspect   : ------------doBefore-----------Request : RequestLog{url='/', ip='0:0:0:0:0:0:0:1', className='com.whw.manghuangblog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {map={gender=男, age=99}}]}
+2021-05-01 10:49:14.772  INFO 11708 --- [http-nio-8080-exec-5] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfterReturning-----------Result：index
+2021-05-01 10:49:14.773  INFO 11708 --- [http-nio-8080-exec-5] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfter-----------
+2021-05-01 10:49:14.929 ERROR 11708 --- [http-nio-8080-exec-4] c.w.m.I.ControllerExceptionHandler       : Request URL : /error, Exception ：{}
+
+org.springframework.http.converter.HttpMessageNotWritableException: No converter found for return value of type: class java.util.LinkedHashMap
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:220) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor.handleReturnValue(HttpEntityMethodProcessor.java:219) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:78) ~[spring-web-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:124) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1061) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) [spring-webmvc-5.3.2.jar:5.3.2]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) [tomcat-embed-core-9.0.41.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.3.2.jar:5.3.2]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) [tomcat-embed-core-9.0.41.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.3.2.jar:5.3.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.2.jar:5.3.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) [spring-web-5.3.2.jar:5.3.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) [spring-web-5.3.2.jar:5.3.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:398) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:257) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:179) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+
+2021-05-01 10:49:14.929  WARN 11708 --- [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: No converter found for return value of type: class java.util.LinkedHashMap]
+2021-05-01 10:49:16.804  INFO 11708 --- [http-nio-8080-exec-2] com.whw.manghuangblog.aspect.LogAspect   : ------------doBefore-----------Request : RequestLog{url='/', ip='0:0:0:0:0:0:0:1', className='com.whw.manghuangblog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {map={gender=男, age=99}}]}
+2021-05-01 10:49:16.820  INFO 11708 --- [http-nio-8080-exec-2] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfterReturning-----------Result：index
+2021-05-01 10:49:16.821  INFO 11708 --- [http-nio-8080-exec-2] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfter-----------
+2021-05-01 10:49:17.019 ERROR 11708 --- [http-nio-8080-exec-2] c.w.m.I.ControllerExceptionHandler       : Request URL : /error, Exception ：{}
+
+org.springframework.http.converter.HttpMessageNotWritableException: No converter found for return value of type: class java.util.LinkedHashMap
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:220) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor.handleReturnValue(HttpEntityMethodProcessor.java:219) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:78) ~[spring-web-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:124) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1061) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) [spring-webmvc-5.3.2.jar:5.3.2]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) [tomcat-embed-core-9.0.41.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.3.2.jar:5.3.2]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) [tomcat-embed-core-9.0.41.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.3.2.jar:5.3.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.2.jar:5.3.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) [spring-web-5.3.2.jar:5.3.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) [spring-web-5.3.2.jar:5.3.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:398) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:257) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:179) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+
+2021-05-01 10:49:17.034  WARN 11708 --- [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: No converter found for return value of type: class java.util.LinkedHashMap]
+2021-05-01 11:07:32.195  INFO 3448 --- [restartedMain] c.w.m.ManghuangBlogApplication           : Starting ManghuangBlogApplication using Java 1.8.0_121 on DESKTOP-72Q8TJC with PID 3448 (C:\Users\12555\IdeaProjects\manghuang-blog\target\classes started by 12555 in C:\Users\12555\IdeaProjects\manghuang-blog)
+2021-05-01 11:07:32.202 DEBUG 3448 --- [restartedMain] c.w.m.ManghuangBlogApplication           : Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-05-01 11:07:32.203  INFO 3448 --- [restartedMain] c.w.m.ManghuangBlogApplication           : The following profiles are active: dev
+2021-05-01 11:07:32.429  INFO 3448 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-01 11:07:32.431  INFO 3448 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-01 11:07:33.677  INFO 3448 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-01 11:07:33.839  INFO 3448 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 150 ms. Found 5 JPA repository interfaces.
+2021-05-01 11:07:34.972  INFO 3448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-01 11:07:34.986  INFO 3448 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-01 11:07:34.986  INFO 3448 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-05-01 11:07:35.318  INFO 3448 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-01 11:07:35.318  INFO 3448 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2884 ms
+2021-05-01 11:07:35.828  INFO 3448 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-01 11:07:35.898  INFO 3448 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2021-05-01 11:07:36.071  INFO 3448 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-01 11:07:36.336  INFO 3448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-01 11:07:37.671  INFO 3448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-01 11:07:37.706  INFO 3448 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-05-01 11:07:39.351  INFO 3448 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-01 11:07:39.370  INFO 3448 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-01 11:07:39.463  INFO 3448 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-05-01 11:07:40.640  WARN 3448 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-01 11:07:40.779  INFO 3448 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-01 11:07:41.147  INFO 3448 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-05-01 11:07:43.137  INFO 3448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-01 11:07:43.147  INFO 3448 --- [restartedMain] c.w.m.ManghuangBlogApplication           : Started ManghuangBlogApplication in 11.992 seconds (JVM running for 18.336)
+2021-05-01 11:07:55.198  INFO 3448 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-01 11:07:55.199  INFO 3448 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-01 11:07:55.200  INFO 3448 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-05-01 11:07:55.261  INFO 3448 --- [http-nio-8080-exec-1] com.whw.manghuangblog.aspect.LogAspect   : ------------doBefore-----------Request : RequestLog{url='/', ip='0:0:0:0:0:0:0:1', className='com.whw.manghuangblog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {map={gender=男, age=99}}]}
+2021-05-01 11:07:55.395  WARN 3448 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-05-01 11:07:55.408  WARN 3448 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-05-01 11:07:55.414  INFO 3448 --- [http-nio-8080-exec-1] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfterReturning-----------Result：index
+2021-05-01 11:07:55.414  INFO 3448 --- [http-nio-8080-exec-1] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfter-----------
+2021-05-01 11:07:56.407 ERROR 3448 --- [http-nio-8080-exec-3] c.w.m.I.ControllerExceptionHandler       : Request URL : /error, Exception ：{}
+
+org.springframework.http.converter.HttpMessageNotWritableException: No converter found for return value of type: class java.util.LinkedHashMap
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:220) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor.handleReturnValue(HttpEntityMethodProcessor.java:219) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:78) ~[spring-web-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:124) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1061) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) [spring-webmvc-5.3.2.jar:5.3.2]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) [tomcat-embed-core-9.0.41.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.3.2.jar:5.3.2]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) [tomcat-embed-core-9.0.41.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.3.2.jar:5.3.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.2.jar:5.3.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) [spring-web-5.3.2.jar:5.3.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) [spring-web-5.3.2.jar:5.3.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:398) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:257) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:179) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+
+2021-05-01 11:07:56.426  WARN 3448 --- [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: No converter found for return value of type: class java.util.LinkedHashMap]
+2021-05-01 11:07:58.425  INFO 3448 --- [http-nio-8080-exec-5] com.whw.manghuangblog.aspect.LogAspect   : ------------doBefore-----------Request : RequestLog{url='/types/-1', ip='0:0:0:0:0:0:0:1', className='com.whw.manghuangblog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {map={gender=男, age=99}}]}
+2021-05-01 11:07:58.450  INFO 3448 --- [http-nio-8080-exec-5] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfterReturning-----------Result：types
+2021-05-01 11:07:58.450  INFO 3448 --- [http-nio-8080-exec-5] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfter-----------
+2021-05-01 11:07:59.927  INFO 3448 --- [http-nio-8080-exec-7] com.whw.manghuangblog.aspect.LogAspect   : ------------doBefore-----------Request : RequestLog{url='/tags/-1', ip='0:0:0:0:0:0:0:1', className='com.whw.manghuangblog.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {map={gender=男, age=99}}]}
+2021-05-01 11:07:59.964  INFO 3448 --- [http-nio-8080-exec-7] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfterReturning-----------Result：tags
+2021-05-01 11:07:59.964  INFO 3448 --- [http-nio-8080-exec-7] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfter-----------
+2021-05-01 11:08:01.937  INFO 3448 --- [http-nio-8080-exec-8] com.whw.manghuangblog.aspect.LogAspect   : ------------doBefore-----------Request : RequestLog{url='/types/-1', ip='0:0:0:0:0:0:0:1', className='com.whw.manghuangblog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {map={gender=男, age=99}}]}
+2021-05-01 11:08:01.949  INFO 3448 --- [http-nio-8080-exec-8] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfterReturning-----------Result：types
+2021-05-01 11:08:01.950  INFO 3448 --- [http-nio-8080-exec-8] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfter-----------
+2021-05-01 11:08:03.048  INFO 3448 --- [http-nio-8080-exec-5] com.whw.manghuangblog.aspect.LogAspect   : ------------doBefore-----------Request : RequestLog{url='/tags/-1', ip='0:0:0:0:0:0:0:1', className='com.whw.manghuangblog.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {map={gender=男, age=99}}]}
+2021-05-01 11:08:03.059  INFO 3448 --- [http-nio-8080-exec-5] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfterReturning-----------Result：tags
+2021-05-01 11:08:03.060  INFO 3448 --- [http-nio-8080-exec-5] com.whw.manghuangblog.aspect.LogAspect   : ------------doAfter-----------
