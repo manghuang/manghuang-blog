@@ -2,5 +2,8 @@ spring:
   #不同环境下加载不同的配置参数
   profiles:
     active: dev
+  #配置静态文件需要的资源
+  messages:
+    basename: i18n/messages
 
 comment.avatar: /images/avatar.png
